@@ -105,7 +105,7 @@ input {
 }
 
     .text-info > * {
-        padding: 0 2.5rem 1rem;
+        padding: 0 2.5rem 0;
     }
 
     /* intended for the first h2 within .text-info */
@@ -128,40 +128,13 @@ input {
         line-height: 24px;
     }
 
-    .text-info .email-signup {
-        margin: 1rem 0 6rem;
+    .text-info {
+        margin: 1rem 0 0rem;
         position: relative;
         width: 100%;
     }
     
-        .email-signup .email-input {
-            border: 1px solid rgba(51, 51, 51, .7);
-            border-radius: 3px;
-            padding: 1rem 1.5rem;
-            opacity: .5;
-            width: 100%;
-        }
-
-        .email-signup .email-input:focus {
-            background-color: var(--theme-color-white);
-            outline: 2px solid var(--theme-color-black);
-            opacity: 1;
-        }
-
-        .email-signup .email-submit {
-            background-color: var(--theme-color-black);
-            border-bottom: 1px solid var(--theme-color-black);
-            border-radius: 2px;
-            color: var(--theme-color-white);
-            cursor: pointer;
-            font-weight: bold;
-            opacity: 1;
-            padding: 1rem 1.5rem;
-            position: absolute;
-            right: 0;
-            margin-right: 2.5rem;
-            z-index: 10;
-        }
+       
 
 @media only screen and (min-width: 768px) {
     body {
@@ -229,20 +202,17 @@ input {
 
     .hero-image-desktop {
         display: block;
-        height: 100%;
+        height: 101%;
         width: 55vw;
     }
 
     .hero-image-desktop img {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-        height: 100%;
+        height: 101%;
         object-fit: cover;
         width: 100%;
     }
   
-    .email-signup .email-submit {
-        border-bottom: 2px solid var(--theme-color-black);
-    }
 }
  </style>
  
@@ -255,7 +225,7 @@ input {
       <section class="hero-banner">
         <div class="logo-wrapper">
             <a href="index.html">
-          <img src="images/mainlogo.png" alt="Main logo." style="height:100px" width="230px">
+          <img src="images/mainlogo.png" alt="Main logo." style="height:90px" width="230px">
         </a>
         </div>
       </section>
@@ -263,14 +233,12 @@ input {
     <main>
       <article class="text-info">
         <h2></h2>
-        <h2>Coming<br>Soon</h2>
-        <p>Hello friends! We are currently building new updates as user profile for you to follow your progress while learning maths and some new games which will make your studying more fun. Add your email address below to stay up-to-date with announcements and our new website updates.</p>
-        <section class = "email-signup">
-          <form>
-            <input class="email-input" type="email" required placeholder="Email Address" name="email-address">
-            <input class="email-submit" value="Go" type="submit" text="Go" for="email-address"> 
-          </form>
-        </section>
+        <h2>Coming<br>Soon</h2> <br>
+        <p>Hello friends! We are currently building new updates as user profile for you to follow your progress while learning maths and some new games which will make your studying more fun. Stay tuned!</p>
+        <p>“The only way to learn mathematics is to do mathematics.” <b>– Paul Halmos</b></p>
+        
+          <img src="images/soon.jpg" width="523px" height="277px">
+        
       </article>
     </main>
   </div>
