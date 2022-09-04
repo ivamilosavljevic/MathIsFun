@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Math Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./gamestyle.css">
+    
+      </head>
+
+    <body>
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="./mainlogo.png" style="height:70px" width="200px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+    
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="../about.html" style="font-size: 20px">About Us</a>
+                   </li>
+    
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../tips.html" style="font-size: 20px">Tips for Studying</a>
+                </li>
+    
+    
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle active" href="../studyMath.html" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px">Lessons</a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="../grade5.html">Grade 5</a></li>
+                       <li><a class="dropdown-item" href="../grade6.html">Grade 6</a></li>
+                       <li><a class="dropdown-item" href="../grade7.html">Grade 7</a></li>
+                       <li><a class="dropdown-item" href="../grade8.html">Grade 8</a></li>
+                     </ul>
+                   </li>
+    
+                     <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px">Quizzes</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../quiz5.html">Quiz for Grade 5</a></li>
+                        <li><a class="dropdown-item" href="../quiz6.html">Quiz for Grade 6</a></li>
+                        <li><a class="dropdown-item" href="../quiz7.html">Quiz for Grade 7</a></li>
+                        <li><a class="dropdown-item" href="../quiz8.html">Quiz for Grade 8</a></li>
+                        <li><a class="dropdown-item" href="../finalExam.html">Final Exam</a></li>
+                      </ul>
+                    </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./mathgame1.html" style="font-size: 20px; background-color:#ddd; text-decoration: underline;">MathGame</a>
+                </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+              <span class="navbar-text">
+                Test your multiplication knowledge with this game. 🔢😋
+              </span>
+            </div>
+          </nav>
+
+        <h1>The Math Game</h1>
+        <div id="container">
+            <div id="score">
+                Score : <span id="scorevalue">0</span>
+            </div>
+            <div id="correct">
+                Correct
+            </div>
+            <div id="wrong">
+                Try Again
+            </div>
+            <div id="question">
+
+            </div>
+            <div id="instruction">
+                Click on the Correct Answer
+            </div>
+            <div id="choices">
+                <div id="box1" class="box"></div>
+                <div id="box2" class="box"></div>
+                <div id="box3" class="box"></div>
+                <div id="box4" class="box"></div>
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            <div id="timeremaining">
+                Time remaining :
+                <span id="timeremainingvalue">60</span>
+                sec
+            </div>
+            <div id="gameOver">
+            </div>
+        </div>
+
+        <!-- script -->
+        <script type="text/javascript" src="script.js"></script>
+
+
+    </body>
+
+</html>

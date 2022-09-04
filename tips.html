@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathIsFun</title>
+
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+ <style>
+.card{
+  border: #094358 3px;
+  border-style: outset;
+ }
+
+
+  .modalDialog {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 99999;
+      opacity:0;
+      -webkit-transition: opacity 300ms ease-in;
+      -moz-transition: opacity 300ms ease-in;
+      transition: opacity 300ms ease-in;
+      pointer-events: none;
+  }
+  
+  .modalDialog:target {
+      opacity:1;
+      pointer-events: auto;
+  }
+  
+  .modalDialog > div {
+      width: 800px;
+      position: relative;
+      margin: 10% auto;
+      padding: 5px 20px 13px 20px;
+      background: linear-gradient(to right bottom, #146f90, hsl(195, 47%, 56%));
+      color: aliceblue;
+      box-shadow: .4rem .4rem 2.4rem .2rem #094358(236, 50%, 50%, 0.3);
+      border-radius: 0.4rem;
+  
+  }
+
+  .modal__title {
+  font-size: 3.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+.model_desc{
+    font-style: italic;
+}
+  
+  .close {
+    padding: 0;
+      color:black;
+      line-height: 25px;
+      position: absolute;
+      right: 10px;
+      text-align: center;
+      top: 10px;
+      width: 24px;
+      text-decoration: none;
+    background:none;
+      font-weight: bold;
+      border: 1px solid hsla(0, 0%, 100%, .4);
+  border-radius: 100rem;
+  }
+
+  .close:hover,
+.close:focus {
+  border-color: hsla(0, 0%, 100%, .6);
+  transform: translateY(-.2rem);
+
+}
+.close:hover { 
+  color: #8d269f;
+  }
+  .carousel-caption h1{ 
+    font-weight: bolder;
+    font-size: larger;
+    background-color: transparent;
+  }
+ </style>
+ 
+    </head>
+ <body style="background-color:#2596be">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/mainlogo.png" style="height:70px" width="200px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="about.html" style="font-size: 20px">About Us</a>
+               </li>
+
+               <li class="nav-item" style="background-color:rgba(37, 150, 190,0.5); text-decoration: underline;">
+                <a class="nav-link active" aria-current="page" href="tips.html" style="font-size: 20px">Tips for Studying</a>
+            </li>
+
+
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px">Lessons</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="grade5.html">Grade 5</a></li>
+                   <li><a class="dropdown-item" href="grade6.html">Grade 6</a></li>
+                   <li><a class="dropdown-item" href="grade7.html">Grade 7</a></li>
+                   <li><a class="dropdown-item" href="grade8.html">Grade 8</a></li>
+                 </ul>
+               </li>
+
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px">Quizzes</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="quiz5.html">Quiz for Grade 5</a></li>
+                    <li><a class="dropdown-item" href="quiz6.html">Quiz for Grade 6</a></li>
+                    <li><a class="dropdown-item" href="quiz7.html">Quiz for Grade 7</a></li>
+                    <li><a class="dropdown-item" href="quiz8.html">Quiz for Grade 8</a></li>
+                    <li><a class="dropdown-item" href="finalExam.html">Final Exam</a></li>
+                  </ul>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="mathgame/mathgame1.html" style="font-size: 20px">MathGame</a>
+            </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav> 
+
+<main>
+  <br>
+<div class="alert alert-primary mt-3">
+    <h1 style="text-align:center;">Study Techniques</h1>
+</div>
+    <div class="row" style="margin-top:30px; margin-left: 90px; margin-right: 90px; margin-bottom: 30px;">
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Associations</h5>
+              <p class="card-text">Attempt to connect the theory you read with events, songs or people. This makes it easier to remember them. </p>
+              <img src="images/owl.png" width="130px" height="130px">
+              <a href="#modal-1" class="btn btn-primary">Read more</a>
+                <div id="modal-1" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">x</a>
+                        <h2 class="modal_title">Associations</h2>
+                        <span class="model_desc">
+                        <p>It’s like creating “memory links”. If you link new knowledge to something you already know, you will remember it better.</p>
+                        <p>Some like to use associations where they move through a house. For each room in the house, a word you want to remember is linked to an object that starts with the same letter as the word.</p>
+                        <img src="tipsimages/house.png" width="500px" height="300px">
+                      <p>One example of this is the decimals of the number π=3.14159265359… 
+                          The house had 1 hallway with 4 pairs of shoes, 1 hat and 5 jackets. The floor had 92 tiles with 65 dots. I moved towards the office which was behind the 3rd door. Inside hung 5 diplomas and 9 medallions on the wall.
+                          </p>
+                    </span>
+                    
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Flashcards</h5>
+              <p class="card-text">Making flashcards can be an effective way to remember specific information. </p>
+              <img src="tipsimages/flashcards.png" width="120px" height="120px" style="margin-bottom: 10px;">
+              <a href="#modal-2" class="btn btn-primary">Read more</a>
+                <div id="modal-2" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">x</a>
+                        <h2 class="modal_title">FlashCards</h2>
+                        <span class="model_desc">
+                        <p>Flashcards are small cards with a keyword on one side, and an explanation, formula or rule on the other.You remember images and illustrations better than text and numbers alone.</p>
+                        <img src="tipsimages/python.svg" width="500px" height="300px" style="margin-left: 100px;">
+                        <p>It does not matter if the combination of text, numbers and images doesn’t make sense to others if it makes sense to you. If you associate the Pythagorean theorem with pythons, which really does not belong together, it can still work well as a flashcard.</p>
+                    </span>
+                    
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mind maps</h5>
+                <p class="card-text">A mind map is a visual representation of your own notes. </p>
+                <img src="tipsimages/mindmap.svg" width="150px" height="150px">
+                <a href="#modal-3" class="btn btn-primary">Read more</a>
+                <div id="modal-3" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">x</a>
+                        <h2 class="modal_title">Mind maps</h2>
+                        <span class="model_desc">
+                        <p>It’s easier to remember a good visual representation rather than a long text. In addition, mind maps make it possible to show connections between different subjects.</p>
+                        <img src="tipsimages/sun_mindmap.svg" width="500px" height="300px" style="margin-left: 100px;">
+                        <p>Build up your mind map with this new topic in the middle and fill the beams with everything you associate with this topic.Mind maps are also a great tool for repetition and preparation for a test or an exam.Hang it on your wall and look at it every day to help you remember it for the day of the exam.</p>
+                    </span>
+                    
+                    </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Visualization</h5>
+                <p class="card-text">The more fun, whacky and vivid visualization you are able to imagine, the better you will remember it.</p>
+                <img src="tipsimages/visualizaton2.svg" width="130px" height="120px">
+                <a href="#modal-4" class="btn btn-primary">Read more</a>
+                <div id="modal-4" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">x</a>
+                        <h2 class="modal_title">Visualization</h2>
+                        <span class="model_desc">
+                          <p>The human brain remembers pictures far better than words. Visualization is therefore one of the most effective study techniques. The more fun, whacky and vivid visualization you are able to imagine, the better you will remember it. </p>
+                          <img src="tipsimages/visual.png" width="300px" height="300px"> &nbsp; <img src="tipsimages/visual2.png" width="300px" height="300px">
+                            <p>Do the following in order to create a visual presentation: Think about what you want to visualize.
+                            Which images come to mind?
+                            Pick one of the images and draw the topic with that image.</p>
+                    </span>
+                    
+                    </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Attitude</h5>
+                <p class="card-text">You can achieve great things with the right attitude!</p>
+                <img src="tipsimages/attitude2.svg" width="130px" height="130px">
+                <a href="#modal-5" class="btn btn-primary">Read more</a>
+                <div id="modal-5" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">x</a>
+                        <h2 class="modal_title">Attitude</h2>
+                        <span class="model_desc">
+                        <p>You can achieve great things with the right attitude! Both in math, but also in other aspects of your education and life in general. Understanding that hard work over time will pay off is the correct attitude.</p>
+                        <img src="tipsimages/attitude.png" width="500px" height="300px" style="margin-left: 80px;">
+                        <p>What we perceive as easy or difficult is different for different people.Hard work will always beat talent. If your math results are not as good as you’ve hoped, then you need to work harder. When you start to work harder, you will notice an increased sense of accomplishment, and working with math will be easier. Like everything else in life, math will be more fun when you experience accomplishment.</p>
+                    </span>
+                    
+                    </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Revise</h5>
+                <img src="tipsimages/association.jpg" width="120px" height="120px">
+                <p class="card-text">The more you revise, the more well prepared you are for examinations. Being well prepared for examinations, fetches you higher grades and marks.</p>
+                <a href="#modal-6" class="btn btn-primary">Read more</a>
+                <div id="modal-6" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">x</a>
+                        <h2 class="modal_title">Revise</h2>
+                        <span class="model_desc">
+                        <p>It is very smart to work consistently throughout the year. This is both true of revision of past topics and new curriculum. This maximizes the comprehension of the subject. </p>
+                        <img src="tipsimages/revise3.jpg" width="500px" height="400px" style="margin-left: 80px;">
+                        <p>You must be exposed to new information six times before it is added to your long-term memory. Thus you need revision to truly learn something. Cramming may give you good grades in the moment, but the knowledge fades shortly after.</p>
+                    </span>
+                    
+                    </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+      </div>
+<br>
+
+<!--YOUTUBE VIDEO-->
+<div class="yt_videos" style="margin-left:170px;">
+  <h2 class="text-primary" style="text-align: justify; margin-right: 210px; background-color: #ccced1;">Motivational videos with advices for better learning</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V6yixyiJcos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+&nbsp;&nbsp;
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IlU-zDU6aQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!--YOUTUBE VIDEO-->
+
+
+<br>
+<!-- Carousel wrapper -->
+<div class="alert alert-info mt-3">
+  <h1 style="text-align:center;">Tips before the Exam</h1>
+</div>
+<div class="container-lg my-3">
+    <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" style="max-width: 70%; max-height: 70%; margin-left: 170px;">
+     
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators" style="max-width: 70%; max-height: 70%; margin-left: 170px;">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+        </ol>
+        
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="tips4exam/222.png" class="d-block w-100" alt="Slide 1" style="max-height: 70%; width:70%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Study together</h5>
+                    <p>Study groups can help you get the answers you need and finish tasks faster. Just make sure the group is focused on the subject and they are not easily distracted.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tips4exam/3.png" class="d-block w-100" alt="Slide 2" style="height: 5%; width:30%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ask for help</h5>
+                    <p>In case you face trouble understanding a specific concept or subject, then do not hesitate to ask for help. Talk to your mentor, teacher, tutor, or your friend to understand the concept better.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tips4exam/1.png" class="d-block w-100" alt="Slide 3" style="max-height: 70%; width:70%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Practice on old exams</h5>
+                    <p>Familiarise yourself with the layout and type of questions you'll be asked. Practise completing exam papers in the set time limit to improve your exam technique.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tips4exam/4.png" class="d-block w-100" alt="Slide 4" style="max-height: 70%; width:70%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Take breaks and use your free time wisely</h5>
+                    <p>Give your brain and body a chance to refresh so you can approach the material with energy and focus. So, stand up, stretch your legs, and get some fresh air before getting back to the books. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tips4exam/5.png" class="d-block w-100" alt="Slide 5" style="max-height: 20%; width:20%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Get enough sleep</h5>
+                    <p>Do not forget to take at least a minimum of seven hours of sleep before the exam.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+   
+</div> <br><br>
+  <!-- Carousel wrapper -->
+
+</main>
+
+<!-- Site footer -->
+<footer class="site-footer" style="background-color: rgb(23, 22, 22); color: aliceblue;">
+  <br> <hr> <br> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-11 col-md-5" style="margin-right: 100px;">
+        <h6><b>About</b></h6>
+        <p class="text-justify font-weight-light">MathIsFun is a website made mainly to make <i>math SIMPLE & FUN </i> for everyone and to help the students by practicing for their exams. MathIsFun focuses on providing the most efficient lessons and exercises.  We will help upcoming mathematicians build up concepts in different topics of the math world include Algebra, Geometry, Calculus, Probability and many other math topics.</p>
+      </div>
+
+      <div class="col-xs-4 col-md-2">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tips.html">Tips for Studying</a></li>
+          <li><a href="finalExam.html">Final Exam</a></li>
+        </ul> </div>
+      
+
+      <div class="col-xs-4 col-md-2">
+        <h6>Lessons</h6>
+        <ul class="footer-links">
+          <li><a href="grade5.html">Grade 5</a></li>
+          <li><a href="grade6.html">Grade 6</a></li>
+          <li><a href="grade7.html">Grade 7</a></li>
+          <li><a href="grade8.html">Grade 8</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-4 col-md-2">
+        <h6>Quizzes</h6>
+        <ul class="footer-links">
+          <li><a href="quiz5.html">Quiz for Grade 5</a></li>
+          <li><a href="quiz6.html">Quiz for Grade 6</a></li>
+          <li><a href="quiz7.html">Quiz for Grade 7</a></li>
+          <li><a href="quiz8.html">Quiz for Grade 8</a></li>
+          <li><a href="comingsoon.html">Coming soon</a></li>
+        </ul>
+        <img src="images/mainlogo.png" style="height:60px" width="180px"> 
+      </div>
+
+        <div class="rounded-social-buttons">
+          <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      </div>
+      
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2022 |  &nbsp;   All Rights Reserved by 
+     Iva Milosavljevic in partnership with IntoMath.</p>
+        </p>
+      </div>
+  
+</footer>
+
+    </body>
+</html>

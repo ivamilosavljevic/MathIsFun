@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="600"
+   height="770"
+   id="svg17004"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docname="Five_Squared.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:docbase="C:\Users\Jeremy\Pictures\Wikipedia Files">
+  <metadata
+     id="metadata17037">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs17035" />
+  <sodipodi:namedview
+     inkscape:window-height="1000"
+     inkscape:window-width="1680"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.72363655"
+     inkscape:cx="341.11765"
+     inkscape:cy="476.76036"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:current-layer="g17006" />
+  <g
+     transform="translate(22.664199,12.794417)"
+     id="g17006">
+    <path
+       d="M 100,0 L 100,500 L 100,0 z "
+       id="path17008"
+       style="fill:none;stroke:#008000;stroke-width:3" />
+    <path
+       d="M 0,100 L 500,100 L 0,100 z "
+       id="path17010"
+       style="fill:none;stroke:#008000;stroke-width:3" />
+    <path
+       d="M 0,0 L 500,0 L 500,500 L 0,500 L 0,0 z "
+       id="path17012"
+       style="fill:none;stroke:#008000;stroke-width:3" />
+    <path
+       d="M 100,0 L 100,500 L 100,0 z M 200,0 L 200,500 L 200,0 z M 300,0 L 300,500 L 300,0 z M 400,0 L 400,500 L 400,0 z M 0,100 L 500,100 L 0,100 z M 0,200 L 500,200 L 0,200 z M 0,300 L 500,300 L 0,300 z M 0,400 L 500,400 L 0,400 z "
+       id="path17014"
+       style="fill:none;stroke:#008000;stroke-width:3" />
+    <path
+       d="M 0,525 L 0,550 L 215,550"
+       id="path17016"
+       style="fill:none;stroke:#000000;stroke-width:2" />
+    <path
+       d="M 285,550 L 500,550 L 500,525"
+       id="path17018"
+       style="fill:none;stroke:#000000;stroke-width:2" />
+    <path
+       d="M 525,0 L 550,0 L 550,205"
+       id="path17020"
+       style="fill:none;stroke:#000000;stroke-width:2" />
+    <path
+       d="M 550,295 L 550,500 L 525,500"
+       id="path17022"
+       style="fill:none;stroke:#000000;stroke-width:2" />
+    <text
+       x="525"
+       y="275"
+       font-size="75"
+       id="text17024"
+       style="font-size:75px;font-family:arial">5</text>
+    <text
+       x="225"
+       y="575"
+       font-size="75"
+       id="text17026"
+       style="font-size:75px;font-family:arial">5</text>
+    <text
+       x="113.81908"
+       y="661.0553"
+       font-size="75"
+       id="text17028"
+       style="font-size:75px;font-family:arial">5 × 5 = 25</text>
+    <text
+       x="158.29146"
+       y="733.41705"
+       font-size="75"
+       id="text17030"
+       style="font-size:75px;font-family:arial">5² = 25</text>
+  </g>
+</svg>

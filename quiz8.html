@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathIsFun</title>
+
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="style.css">
+    </head>
+ <body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/mainlogo.png" style="height:70px" width="200px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+    
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="about.html" style="font-size: 20px">About Us</a>
+                   </li>
+    
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="tips.html" style="font-size: 20px">Tips for Studying</a>
+                </li>
+    
+    
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px">Lessons</a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="grade5.html">Grade 5</a></li>
+                       <li><a class="dropdown-item" href="grade6.html">Grade 6</a></li>
+                       <li><a class="dropdown-item" href="grade7.html">Grade 7</a></li>
+                       <li><a class="dropdown-item" href="grade8.html">Grade 8</a></li>
+                     </ul>
+                   </li>
+    
+                     <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px">Quizzes</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="quiz5.html">Quiz for Grade 5</a></li>
+                        <li><a class="dropdown-item" href="quiz6.html">Quiz for Grade 6</a></li>
+                        <li><a class="dropdown-item" href="quiz7.html">Quiz for Grade 7</a></li>
+                        <li><a class="dropdown-item" href="quiz8.html" style="background-color:rgba(152, 156, 157, 0.5); text-decoration: underline;">Quiz for Grade 8</a></li>
+                        <li><a class="dropdown-item" href="finalExam.html">Final Exam</a></li>
+                      </ul>
+                    </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="mathgame/mathgame1.html" style="font-size: 20px">MathGame</a>
+                </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="grid">
+        <div id="quiz">
+            <h1>Quiz</h1>
+            <hr style="margin-top: 15px">
+
+            <p id="question"></p>
+
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+            <hr style="margin-top: 50px;">
+            <footer>
+                <p id="progress">Question x of y.</p>
+            </footer>
+        </div>
+        <div id="endQuizButtons" style="display: none">
+            <a href="index.html"><button id="firstBtn">Back to home page</button></a>
+            <a href="quiz8.html"><button id="secondBtn">Retry quiz</button></a>
+        </div>
+    </div> <br>
+
+    <div id="count" style="display: none"></div>
+    <script src="quiz8/quiz_controller.js"></script>
+    <script src="quiz8/question.js"></script>
+    <script src="quiz8/app.js"></script>
+    <link rel="stylesheet" href="quiz8/quiz_style.css">
+
+
+
+    </body>
+    </html>
